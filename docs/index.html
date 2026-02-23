@@ -1,1 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToiletPlayer - Your Bathroom Soundtrack, Automatically</title>
+    <meta name="description" content="An Android music player that uses the ambient light sensor to seamlessly control music playback when you enter or leave a room.">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
 
+    <header class="main-header">
+        <div class="logo">
+            <span class="icon">🎵</span>
+            <span class="text">ToiletPlayer</span>
+        </div>
+        <a href="https://groups.google.com/u/4/g/toilet-player-beta-testers" target="_blank" rel="noopener noreferrer" class="btn-primary small">Join the Beta</a>
+    </header>
+
+    <main>
+        <section class="hero interact-area" id="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <div class="light-content hidden-until-light">
+                        <h1 class="headline">Your Toilet's Soundtrack. <span class="highlight">Automatically.</span></h1>
+                        <p class="subtitle">Music that starts when you turn on the light and stops when you turn it off.</p>
+                        <div class="download-placeholder">
+                            <a href="https://groups.google.com/u/4/g/toilet-player-beta-testers" target="_blank" rel="noopener noreferrer" class="btn-primary">Join the Beta</a>
+                            <p class="beta-notice">Closed beta testers will be granted Premium for free!</p>
+                        </div>
+                    </div>
+                    <div class="interactive-prompt visible-in-dark">
+                        <h2>Tap to turn on the light</h2>
+                        <div class="arrow-right hidden-mobile">→</div>
+                        <div class="arrow-down visible-mobile">↓</div>
+                    </div>
+                </div>
+
+                <div class="bathroom-scene" id="interactiveScene" role="button" aria-label="Toggle Light" tabindex="0">
+                    <div class="scene-image dark-scene"></div>
+                    <div class="scene-image bright-scene"></div>
+                    <div class="music-notes-container">
+                        <span class="music-note n1">♪</span>
+                        <span class="music-note n2">♫</span>
+                        <span class="music-note n3">♪</span>
+                        <span class="music-note n4">♬</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#noble-purpose" class="scroll-indicator fixed-arrow" aria-label="Scroll down">
+            <span class="scroll-arrow">↓</span>
+        </a>
+
+        <section class="repurpose section-accent compact" id="noble-purpose">
+            <div class="container container-narrow">
+                <div class="repurpose-content">
+                    <div class="repurpose-text">
+                        <h2 class="section-title">A Noble Purpose for Your Old Phone</h2>
+                        <p>Got an old Android phone<span class="asterisk">*</span> gathering dust in a drawer? Give it a second life! Install ToiletPlayer, plug it into a wall and forget about uncomfortable silence! Works with sluggish phones, phones with cracked screens, no internet connection required!</p>
+                        <p class="disclaimer"><span class="asterisk">*</span> Android 8 and up</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works section-light" id="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How it works</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-icon">📱</div>
+                        <h3>1. Place Your Phone</h3>
+                        <p>Leave your phone plugged in on the bathroom counter (or any room).</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">💡</div>
+                        <h3>2. Turn on the Light</h3>
+                        <p>The app detects the room getting bright and instantly starts playing music.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon">🎵</div>
+                        <h3>3. Enjoy the Vibes</h3>
+                        <p>When you turn off the light, the music elegantly fades out.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features section-dark">
+            <div class="container">
+                
+                <!-- Free tier container -->
+                <div class="tier-container free-tier">
+                    <h2 class="section-title">Free Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">📁</div>
+                            <h3>Local Audio & Loops</h3>
+                            <p>Play perfectly with your local MP3 files stored directly on your phone. Don't have music? Choose from built-in relaxing ambient loops featuring nature sounds.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎚️</div>
+                            <h3>Faders</h3>
+                            <p>Enjoy elegant and smooth fade-in and fade-out transitions when the light turns on and off.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚙️</div>
+                            <h3>Configurable Sensor</h3>
+                            <p>Adjust the exact light sensitivity threshold to perfectly match your room's natural darkness.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium tier container -->
+                <div class="tier-container premium-tier">
+                    <div class="tier-header">
+                        <h2>Enjoy Free Forever or Unlock Premium for $3.99</h2>
+                        <p>Upgrade via a one-time in-app purchase to unleash the full power of ToiletPlayer.</p>
+                        <p class="beta-promo-tier"><strong>Note:</strong> Closed beta testers will be granted Premium for free!</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🌐</div>
+                            <h3>Internet Radio</h3>
+                            <p>Stream endless global radio stations from Radio Browser or your own custom internet stream URLs.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎛️</div>
+                            <h3>Equalizer</h3>
+                            <p>Unlock the built-in equalizer to fine-tune the sound and make your tunes sound perfect on your device's speaker.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⏰</div>
+                            <h3>Schedules</h3>
+                            <p>Want energetic rock in the morning and calm jazz at night? Set up automatic time-based rules to change the vibe.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer" id="download">
+        <div class="container">
+            <div class="footer-content">
+                <div class="brand">
+                    <div class="logo">
+                        <span class="icon">🎵</span>
+                        <span class="text">ToiletPlayer</span>
+                    </div>
+                    <p>The smartest dumb app you never knew you needed.</p>
+                </div>
+                <div class="download-section">
+                    <h3>Get it now</h3>
+                    <a href="https://groups.google.com/u/4/g/toilet-player-beta-testers" target="_blank" rel="noopener noreferrer" class="btn-primary">Join the Beta</a>
+                    <p class="beta-notice-footer">Closed beta testers will be granted Premium for free!</p>
+                    <p class="legal-disclaimer">Google Play and the Google Play logo are trademarks of Google LLC.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> QATSISoft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
